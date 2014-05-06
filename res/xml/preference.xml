@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <EditTextPreference 
+        android:title="使用者名稱"
+        android:key="name"
+        android:summary="請輸入您的名稱。" />
+    
+    <CheckBoxPreference 
+        android:title="CheckBox"
+        android:defaultValue="true"
+        android:key="checkbox"
+        android:summary="check this box"/>
+    
+    <ListPreference 
+        android:title="分類排序方式"
+        android:key="list"
+        android:summary="單字列表中分類的排序方式選擇。"
+        android:entries="@array/list"
+        android:entryValues="@array/lvalues" />
+
+</PreferenceScreen>
